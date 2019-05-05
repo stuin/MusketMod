@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "musket:item/unloaded_rifle"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "pulling": 1
+      },
+      "model": "musket:item/loaded_rifle"
+    },
+    {
+      "predicate": {
+        "charged": 1
+      },
+      "model": "musket:item/loaded_rifle"
+    }
+  ]
+}
