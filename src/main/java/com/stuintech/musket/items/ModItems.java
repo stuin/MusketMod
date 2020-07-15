@@ -6,8 +6,8 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.registry.Registry;
 
 public class ModItems {
-    public static final Item.Settings WEAPONSETTINGS = new Item.Settings().stackSize(1).itemGroup(ItemGroup.COMBAT);
-    public static final Item.Settings AMMOSETTINGS = new Item.Settings().itemGroup(ItemGroup.COMBAT);
+    public static final Item.Settings WEAPONSETTINGS = new Item.Settings().maxCount(1).group(ItemGroup.COMBAT);
+    public static final Item.Settings AMMOSETTINGS = new Item.Settings().group(ItemGroup.COMBAT);
 
     //Base Items
     public static final Item rifle = new MusketItem(WEAPONSETTINGS);

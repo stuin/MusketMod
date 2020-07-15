@@ -3,10 +3,46 @@
   "textures": {
     "layer0": "musket:item/unloaded_rifle"
   },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [ -90, -90, -60 ],
+      "translation": [ 2, 0.1, -3 ],
+      "scale": [ 0.9, 0.9, 0.9 ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [ -90, -90, 30 ],
+      "translation": [ 2, 0.1, -3 ],
+      "scale": [ 0.9, 0.9, 0.9 ]
+    },
+    "firstperson_righthand": {
+      "rotation": [ -90, -90, -55 ],
+      "translation": [ 1.13, 3.2, 1.13],
+      "scale": [ 0.68, 0.68, 0.68 ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [ -90, -90, 35 ],
+      "translation": [ 1.13, 3.2, 1.13],
+      "scale": [ 0.68, 0.68, 0.68 ]
+    }
+  },
   "overrides": [
     {
       "predicate": {
         "pulling": 1
+      },
+      "model": "musket:item/unloaded_rifle"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.58
+      },
+      "model": "musket:item/unloaded_rifle"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 1.0
       },
       "model": "musket:item/loaded_rifle"
     },

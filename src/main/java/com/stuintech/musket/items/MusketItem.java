@@ -1,17 +1,12 @@
 package com.stuintech.musket.items;
 
 import net.minecraft.item.CrossbowItem;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.tag.ItemTags;
-import net.minecraft.tag.Tag;
-import net.minecraft.util.Identifier;
+import net.minecraft.item.Items;
 
 import java.util.function.Predicate;
 
 public class MusketItem extends CrossbowItem {
-    //Load item tag for bullets
-    public static final Tag<Item> BULLETS = new ItemTags.class_3490(new Identifier("bullet"));
 
     public MusketItem(Settings settings) {
         super(settings);
@@ -23,11 +18,20 @@ public class MusketItem extends CrossbowItem {
         //return itemStack_1.getItem().matches(BULLETS);
     };
 
-    //Link predicate to musket item
-    public Predicate<ItemStack> getHeldProjectilePredicate() {
+    @Override
+    public Predicate<ItemStack> getHeldProjectiles() {
         return IS_GUN_PROJECTILE;
     }
-    public Predicate<ItemStack> getInventoryProjectilePredicate() {
+
+    @Override
+    public Predicate<ItemStack> getProjectiles() {
         return IS_GUN_PROJECTILE;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if(o == Items.CROSSBOW)
+            return true;
+        return super.equals(o);
     }
 }

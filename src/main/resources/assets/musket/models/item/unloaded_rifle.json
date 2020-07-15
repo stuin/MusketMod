@@ -1,6 +1,6 @@
 {
   "parent": "musket:item/rifle",
   "textures": {
-    "layer0": "musket:item/loaded_rifle"
+    "layer0": "musket:item/unloaded_rifle"
   }
 }

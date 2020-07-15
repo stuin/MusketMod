@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "musket",
-  "version": "1.0.0",
+  "version": "${version}",
 
   "name": "Musket Mod",
   "description": "Basic old gun mod.",
@@ -23,8 +23,8 @@
     ]
   },
 
-  "requires": {
-    "fabricloader": ">=0.4.0",
+  "depends": {
+    "fabricloader": ">=0.8.8",
     "fabric": "*"
   }
 }
